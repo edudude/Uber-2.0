@@ -13,6 +13,11 @@
 		FA7BECAB1F7F34E000AD6DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7BECA91F7F34E000AD6DD4 /* Main.storyboard */; };
 		FA7BECAD1F7F34E000AD6DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7BECAC1F7F34E000AD6DD4 /* Assets.xcassets */; };
 		FA7BECB01F7F34E000AD6DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7BECAE1F7F34E000AD6DD4 /* LaunchScreen.storyboard */; };
+		FA7BECBB1F7FFC9600AD6DD4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECBA1F7FFC9600AD6DD4 /* GradientView.swift */; };
+		FA7BECBD1F8001F800AD6DD4 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECBC1F8001F800AD6DD4 /* RoundImageView.swift */; };
+		FA7BECBF1F80038600AD6DD4 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECBE1F80038600AD6DD4 /* RoundedShadowView.swift */; };
+		FA7BECC11F80049600AD6DD4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC01F80049600AD6DD4 /* CircleView.swift */; };
+		FA7BECC31F800AD600AD6DD4 /* RoundedShadowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC21F800AD600AD6DD4 /* RoundedShadowButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		FA7BECAC1F7F34E000AD6DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7BECAF1F7F34E000AD6DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7BECB11F7F34E000AD6DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7BECBA1F7FFC9600AD6DD4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FA7BECBC1F8001F800AD6DD4 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		FA7BECBE1F80038600AD6DD4 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		FA7BECC01F80049600AD6DD4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CircleView.swift; path = "/Users/Alex/Desktop/Swift iOS/iOSProject/Portfolio Projects/Uber 2.0/Uber 2.0/View/CircleView.swift"; sourceTree = "<absolute>"; };
+		FA7BECC21F800AD600AD6DD4 /* RoundedShadowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,9 @@
 		FA7BECA41F7F34E000AD6DD4 /* Uber 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				FA7BECB91F7FFBA200AD6DD4 /* Model */,
+				FA7BECB81F7FFB9E00AD6DD4 /* View */,
+				FA7BECB71F7FFB9800AD6DD4 /* Controller */,
 				FA7BECA51F7F34E000AD6DD4 /* AppDelegate.swift */,
 				FA7BECA71F7F34E000AD6DD4 /* ViewController.swift */,
 				FA7BECA91F7F34E000AD6DD4 /* Main.storyboard */,
@@ -86,6 +99,32 @@
 				FA7BECB11F7F34E000AD6DD4 /* Info.plist */,
 			);
 			path = "Uber 2.0";
+			sourceTree = "<group>";
+		};
+		FA7BECB71F7FFB9800AD6DD4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA7BECB81F7FFB9E00AD6DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BECC01F80049600AD6DD4 /* CircleView.swift */,
+				FA7BECBA1F7FFC9600AD6DD4 /* GradientView.swift */,
+				FA7BECBC1F8001F800AD6DD4 /* RoundImageView.swift */,
+				FA7BECBE1F80038600AD6DD4 /* RoundedShadowView.swift */,
+				FA7BECC21F800AD600AD6DD4 /* RoundedShadowButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7BECB91F7FFBA200AD6DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7BECC31F800AD600AD6DD4 /* RoundedShadowButtonView.swift in Sources */,
+				FA7BECC11F80049600AD6DD4 /* CircleView.swift in Sources */,
 				FA7BECA81F7F34E000AD6DD4 /* ViewController.swift in Sources */,
+				FA7BECBD1F8001F800AD6DD4 /* RoundImageView.swift in Sources */,
+				FA7BECBF1F80038600AD6DD4 /* RoundedShadowView.swift in Sources */,
 				FA7BECA61F7F34E000AD6DD4 /* AppDelegate.swift in Sources */,
+				FA7BECBB1F7FFC9600AD6DD4 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

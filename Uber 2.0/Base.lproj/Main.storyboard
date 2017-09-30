@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,28 +21,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Uber_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fob-Nr-HjX">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihT-31-sV8" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="20" width="375" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihT-31-sV8" userLabel="Top View" customClass="GradientView" customModule="Uber_2_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="414" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="77l-9h-8rL"/>
+                                    <constraint firstAttribute="height" constant="90" id="UqV-qv-Yoh"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="61r-EC-ihi" userLabel="Top UI Stackview">
-                                <rect key="frame" x="16" y="50" width="343" height="30"/>
+                                <rect key="frame" x="20" y="50" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIk-2o-UFw">
                                         <rect key="frame" x="0.0" y="3" width="30" height="24"/>
                                         <state key="normal" image="menuSliderBtn"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="G61-Sn-Llw" userLabel="Title Stackview">
-                                        <rect key="frame" x="119" y="0.0" width="105" height="30"/>
+                                        <rect key="frame" x="134.66666666666669" y="0.0" width="105.00000000000003" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqw-Kk-vHl">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
@@ -51,15 +50,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2X-IZ-MBI">
-                                                <rect key="frame" x="65" y="0.0" width="40" height="30"/>
+                                                <rect key="frame" x="65" y="0.0" width="40.000000000000028" height="30"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uyw-Vz-E8f">
-                                        <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="Uyw-Vz-E8f" customClass="RoundImageView" customModule="Uber_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="344" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="thW-lH-dHi"/>
                                         </constraints>
@@ -69,23 +68,28 @@
                                     <constraint firstAttribute="height" constant="30" id="dbZ-O5-N6c"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYt-PG-AtW">
-                                <rect key="frame" x="16" y="88" width="343" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYt-PG-AtW" customClass="RoundedShadowView" customModule="Uber_2_0" customModuleProvider="target">
+                                <rect key="frame" x="16" y="88" width="382" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tRV-e8-bOc">
-                                        <rect key="frame" x="18" y="15" width="306" height="51"/>
+                                        <rect key="frame" x="18" y="15" width="306" height="51.333333333333329"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gE6-CF-TDb" userLabel="Top Stackview">
                                                 <rect key="frame" x="0.0" y="0.0" width="306" height="20"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CF9-RC-Y9p">
-                                                        <rect key="frame" x="0.0" y="2.5" width="15" height="15"/>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CF9-RC-Y9p" customClass="CircleView" customModule="Uber_2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="2.3333333333333321" width="15" height="15"/>
                                                         <color key="backgroundColor" red="0.4826817289" green="1" blue="0.062354001389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="15" id="Yg2-Dc-8Ez"/>
                                                             <constraint firstAttribute="height" constant="15" id="llN-le-XQ2"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.4826817289" green="1" blue="0.062354001389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTL-Hh-CaC">
                                                         <rect key="frame" x="25" y="0.0" width="281" height="20"/>
@@ -106,18 +110,23 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Wp-hC-NG7" userLabel="Bottom Stackview">
-                                                <rect key="frame" x="0.0" y="31" width="306" height="20"/>
+                                                <rect key="frame" x="0.0" y="30.999999999999996" width="306" height="20.333333333333332"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSD-dO-zIY">
-                                                        <rect key="frame" x="0.0" y="2.5" width="15" height="15"/>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSD-dO-zIY" customClass="CircleView" customModule="Uber_2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="2.6666666666666661" width="15" height="14.999999999999998"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="Z5k-9l-9Ag"/>
                                                             <constraint firstAttribute="width" constant="15" id="eRk-Y5-8Nx"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I8Y-ib-CtZ">
-                                                        <rect key="frame" x="25" y="0.0" width="281" height="20"/>
+                                                        <rect key="frame" x="25" y="0.0" width="281" height="20.333333333333336"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -135,59 +144,80 @@
                                     <constraint firstAttribute="height" constant="80" id="wY3-Y8-VzR"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRL-dK-0qW" userLabel="MyLocation Button">
-                                <rect key="frame" x="299" y="519" width="60" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvJ-nj-BXK">
+                                <rect key="frame" x="0.0" y="656" width="414" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz6-Uw-CVq" customClass="RoundedShadowButtonView" customModule="Uber_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="10" width="382" height="60"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="TmD-1j-hBl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                        <state key="normal" title="REQUEST RIDE"/>
+                                        <connections>
+                                            <action selector="actionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FfN-uD-8eY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="VB7-KE-rFK"/>
-                                    <constraint firstAttribute="width" constant="60" id="dIa-KG-zcw"/>
+                                    <constraint firstItem="Zz6-Uw-CVq" firstAttribute="leading" secondItem="yvJ-nj-BXK" secondAttribute="leading" constant="16" id="2m8-8z-ygF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zz6-Uw-CVq" secondAttribute="bottom" constant="10" id="EhA-2a-0jT"/>
+                                    <constraint firstAttribute="height" constant="80" id="GiO-we-DQ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zz6-Uw-CVq" secondAttribute="trailing" constant="16" id="NPJ-L1-uuL"/>
+                                    <constraint firstItem="Zz6-Uw-CVq" firstAttribute="top" secondItem="yvJ-nj-BXK" secondAttribute="top" constant="10" id="OCT-0o-AHR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRL-dK-0qW" userLabel="MyLocation Button">
+                                <rect key="frame" x="334" y="588" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="KTO-KF-TvA"/>
+                                    <constraint firstAttribute="height" constant="60" id="eoU-GR-ol0"/>
                                 </constraints>
                                 <state key="normal" image="centerMapBtn"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz6-Uw-CVq">
-                                <rect key="frame" x="16" y="587" width="343" height="60"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="TmD-1j-hBl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="REQUEST RIDE"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zz6-Uw-CVq" secondAttribute="trailing" constant="16" id="1hZ-3H-B9z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRL-dK-0qW" secondAttribute="trailing" constant="16" id="3GR-GB-0TB"/>
                             <constraint firstItem="Fob-Nr-HjX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9xd-1W-eOX"/>
                             <constraint firstItem="61r-EC-ihi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9xh-KE-ht8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zz6-Uw-CVq" secondAttribute="bottom" constant="20" id="Gps-Cd-rbT"/>
+                            <constraint firstItem="yvJ-nj-BXK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BMY-wb-D0k"/>
+                            <constraint firstItem="ihT-31-sV8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BZd-fQ-byo"/>
                             <constraint firstItem="zYt-PG-AtW" firstAttribute="top" secondItem="61r-EC-ihi" secondAttribute="bottom" constant="8" id="Ho1-Iz-Dxb"/>
+                            <constraint firstItem="ihT-31-sV8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nb1-2v-bFD"/>
                             <constraint firstItem="61r-EC-ihi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OUP-8Z-NIf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fob-Nr-HjX" secondAttribute="bottom" id="P8y-6A-qNZ"/>
                             <constraint firstItem="61r-EC-ihi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="PSn-4s-sfJ"/>
                             <constraint firstItem="Fob-Nr-HjX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QEV-dT-02n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRL-dK-0qW" secondAttribute="trailing" constant="20" id="UhU-yw-xGX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zYt-PG-AtW" secondAttribute="trailing" constant="16" id="WPF-14-SLd"/>
-                            <constraint firstItem="ihT-31-sV8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xsx-X4-8Uf"/>
-                            <constraint firstItem="Zz6-Uw-CVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zba-qC-Dkz"/>
-                            <constraint firstItem="ihT-31-sV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fb7-di-ood"/>
+                            <constraint firstItem="yvJ-nj-BXK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="evK-PN-A6N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="61r-EC-ihi" secondAttribute="trailing" constant="16" id="g3o-x3-84R"/>
                             <constraint firstAttribute="trailingMargin" secondItem="61r-EC-ihi" secondAttribute="trailing" id="gqY-Ic-Qha"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fob-Nr-HjX" secondAttribute="bottom" id="hWB-W9-cl2"/>
-                            <constraint firstItem="Zz6-Uw-CVq" firstAttribute="top" secondItem="FRL-dK-0qW" secondAttribute="bottom" constant="8" id="rNf-Cf-cGp"/>
+                            <constraint firstItem="yvJ-nj-BXK" firstAttribute="top" secondItem="FRL-dK-0qW" secondAttribute="bottom" constant="8" id="mWs-Mn-bzT"/>
                             <constraint firstItem="zYt-PG-AtW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sOX-4p-k5U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fob-Nr-HjX" secondAttribute="trailing" id="sQa-4V-Edj"/>
                             <constraint firstItem="Fob-Nr-HjX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sWz-Ry-lto"/>
-                            <constraint firstItem="ihT-31-sV8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zyS-mm-Gvk"/>
+                            <constraint firstItem="yvJ-nj-BXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sxs-PE-2vg"/>
+                            <constraint firstItem="ihT-31-sV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zfa-3C-IqA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="Zz6-Uw-CVq" id="jTJ-SX-SFw"/>
+                        <outlet property="mapView" destination="Fob-Nr-HjX" id="3ff-c4-tlS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.23188405797103" y="132.88043478260872"/>
         </scene>
     </scenes>
     <resources>
         <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
+        <image name="sample-photo" width="551" height="397"/>
     </resources>
 </document>
