@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Uber 2.0
 //
 //  Created by Alex Wong on 9/29/17.
@@ -9,10 +9,13 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class HomeViewController: UIViewController, MKMapViewDelegate {
 
+    var delegate: CenterViewControllerDelegate?
+    
     @IBOutlet weak var actionButton: RoundedShadowButtonView!
     @IBOutlet weak var mapView: MKMapView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +32,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         actionButton.animateButton(shouldLoad: true, withMessage: nil)
     }
     
+    @IBAction func menuButtonPressed(_ sender: Any) {
+        delegate?.toggleLeftPanel()
+    }
 }
 
