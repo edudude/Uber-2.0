@@ -26,10 +26,10 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         mapView.delegate = self
         
+        // RevealingSplashView
         self.view.addSubview(revealingSplashView)
         revealingSplashView.animationType = SplashAnimationType.heartBeat
         revealingSplashView.startAnimation()
-        
         revealingSplashView.heartAttack = true
     }
 

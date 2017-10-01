@@ -11,10 +11,10 @@ import UIKit
 class RoundImageView: UIImageView {
 
     override func awakeFromNib() {
-        setupCircleView()
+        setupView()
     }
     
-    func setupCircleView(){
+    func setupView(){
         self.layer.cornerRadius = self.frame.width/2
         self.clipsToBounds = true // cookie cut image to fit in the circle
     }

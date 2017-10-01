@@ -24,6 +24,7 @@
 		FA7BECCD1F806E7700AD6DD4 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */; };
 		FA7BECCF1F80762500AD6DD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */; };
 		FA7BECD11F8078C400AD6DD4 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECD01F8078C400AD6DD4 /* RoundedCornerTextField.swift */; };
+		FA7BECD61F80AAAB00AD6DD4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECD51F80AAAB00AD6DD4 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA7BECD01F8078C400AD6DD4 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		FA7BECD21F80846C00AD6DD4 /* Launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launchscreen.png; sourceTree = "<group>"; };
+		FA7BECD31F80A94900AD6DD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA7BECD51F80AAAB00AD6DD4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		FA7BECA41F7F34E000AD6DD4 /* Uber 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				FA7BECD41F80AA9800AD6DD4 /* Services */,
 				FA7BECCB1F806E6800AD6DD4 /* Extensions */,
 				FA7BECC81F803A9100AD6DD4 /* Protocols */,
 				FA7BECB91F7FFBA200AD6DD4 /* Model */,
@@ -112,6 +116,7 @@
 				FA7BECD21F80846C00AD6DD4 /* Launchscreen.png */,
 				FA7BECAE1F7F34E000AD6DD4 /* LaunchScreen.storyboard */,
 				FA7BECB11F7F34E000AD6DD4 /* Info.plist */,
+				FA7BECD31F80A94900AD6DD4 /* GoogleService-Info.plist */,
 			);
 			path = "Uber 2.0";
 			sourceTree = "<group>";
@@ -161,6 +166,15 @@
 				FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA7BECD41F80AA9800AD6DD4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BECD51F80AAAB00AD6DD4 /* DataService.swift */,
+			);
+			name = Services;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7BECCF1F80762500AD6DD4 /* LoginViewController.swift in Sources */,
+				FA7BECD61F80AAAB00AD6DD4 /* DataService.swift in Sources */,
 				FA7BECC31F800AD600AD6DD4 /* RoundedShadowButtonView.swift in Sources */,
 				FA7BECC11F80049600AD6DD4 /* CircleView.swift in Sources */,
 				FA7BECA81F7F34E000AD6DD4 /* HomeViewController.swift in Sources */,
