@@ -48,6 +48,7 @@
 		FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA7BECD01F8078C400AD6DD4 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		FA7BECD21F80846C00AD6DD4 /* Launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launchscreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +109,7 @@
 				FA7BECA51F7F34E000AD6DD4 /* AppDelegate.swift */,
 				FA7BECA91F7F34E000AD6DD4 /* Main.storyboard */,
 				FA7BECAC1F7F34E000AD6DD4 /* Assets.xcassets */,
+				FA7BECD21F80846C00AD6DD4 /* Launchscreen.png */,
 				FA7BECAE1F7F34E000AD6DD4 /* LaunchScreen.storyboard */,
 				FA7BECB11F7F34E000AD6DD4 /* Info.plist */,
 			);
