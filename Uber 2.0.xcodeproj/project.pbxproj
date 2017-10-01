@@ -22,6 +22,7 @@
 		FA7BECC71F8036C100AD6DD4 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC61F8036C100AD6DD4 /* ContainerViewController.swift */; };
 		FA7BECCA1F803AA700AD6DD4 /* CenterViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC91F803AA700AD6DD4 /* CenterViewControllerDelegate.swift */; };
 		FA7BECCD1F806E7700AD6DD4 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */; };
+		FA7BECCF1F80762500AD6DD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FA7BECC61F8036C100AD6DD4 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		FA7BECC91F803AA700AD6DD4 /* CenterViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewControllerDelegate.swift; sourceTree = "<group>"; };
 		FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				FA7BECA71F7F34E000AD6DD4 /* HomeViewController.swift */,
 				FA7BECC41F80278300AD6DD4 /* LeftSidePanelViewController.swift */,
 				FA7BECC61F8036C100AD6DD4 /* ContainerViewController.swift */,
+				FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7BECCF1F80762500AD6DD4 /* LoginViewController.swift in Sources */,
 				FA7BECC31F800AD600AD6DD4 /* RoundedShadowButtonView.swift in Sources */,
 				FA7BECC11F80049600AD6DD4 /* CircleView.swift in Sources */,
 				FA7BECA81F7F34E000AD6DD4 /* HomeViewController.swift in Sources */,
