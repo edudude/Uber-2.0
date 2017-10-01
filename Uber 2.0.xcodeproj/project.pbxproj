@@ -23,6 +23,7 @@
 		FA7BECCA1F803AA700AD6DD4 /* CenterViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC91F803AA700AD6DD4 /* CenterViewControllerDelegate.swift */; };
 		FA7BECCD1F806E7700AD6DD4 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */; };
 		FA7BECCF1F80762500AD6DD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */; };
+		FA7BECD11F8078C400AD6DD4 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECD01F8078C400AD6DD4 /* RoundedCornerTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FA7BECC91F803AA700AD6DD4 /* CenterViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewControllerDelegate.swift; sourceTree = "<group>"; };
 		FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		FA7BECCE1F80762500AD6DD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA7BECD01F8078C400AD6DD4 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				FA7BECBC1F8001F800AD6DD4 /* RoundImageView.swift */,
 				FA7BECBE1F80038600AD6DD4 /* RoundedShadowView.swift */,
 				FA7BECC21F800AD600AD6DD4 /* RoundedShadowButtonView.swift */,
+				FA7BECD01F8078C400AD6DD4 /* RoundedCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				FA7BECC51F80278300AD6DD4 /* LeftSidePanelViewController.swift in Sources */,
 				FA7BECBF1F80038600AD6DD4 /* RoundedShadowView.swift in Sources */,
 				FA7BECA61F7F34E000AD6DD4 /* AppDelegate.swift in Sources */,
+				FA7BECD11F8078C400AD6DD4 /* RoundedCornerTextField.swift in Sources */,
 				FA7BECC71F8036C100AD6DD4 /* ContainerViewController.swift in Sources */,
 				FA7BECBB1F7FFC9600AD6DD4 /* GradientView.swift in Sources */,
 			);

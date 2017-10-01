@@ -324,6 +324,9 @@
                                                 <constraint firstAttribute="height" constant="30" id="cFZ-CE-gjR"/>
                                             </constraints>
                                             <state key="normal" image="cancelBtn"/>
+                                            <connections>
+                                                <action selector="cancelSignUpLogin:" destination="NIh-AG-GUL" eventType="touchUpInside" id="S2r-t8-HbI"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r2q-dc-4FU">
                                             <rect key="frame" x="5" y="180" width="404" height="381"/>
@@ -371,7 +374,7 @@
                                                     </segments>
                                                     <color key="tintColor" red="0.21671625820000001" green="0.6280134718" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </segmentedControl>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eU-3F-BEY">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eU-3F-BEY" customClass="RoundedCornerTextField" customModule="Uber_2_0" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="241" width="404" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="ngi-A5-APL"/>
@@ -380,7 +383,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abZ-Ob-6gz">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abZ-Ob-6gz" customClass="RoundedCornerTextField" customModule="Uber_2_0" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="321" width="404" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="Wlh-kf-2l2"/>
