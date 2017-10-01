@@ -12,7 +12,6 @@ import QuartzCore
 enum SlideOutState{
     case Collapsed
     case LeftPanelExpanded
-    
 }
 
 enum ShowWhichViewController{
@@ -23,22 +22,21 @@ var showViewController: ShowWhichViewController = .HomeViewController
 
 class ContainerViewController: UIViewController {
 
+    // MARK: - Properties
     var homeViewController: HomeViewController!
+    var leftViewController: LeftSidePanelViewController!
+    var centerController: UIViewController!
+    var statusBarIsHidden = false
+    let centerPanelExpandedOffset: CGFloat = 160
+    var tap: UITapGestureRecognizer!
     var currentState: SlideOutState = .Collapsed {
         didSet{
             let shouldShowShadow = currentState != .Collapsed
-            
             shouldShowShadowForCenterViewController(status: shouldShowShadow)
         }
     }
-    var leftViewController: LeftSidePanelViewController!
-    var centerController: UIViewController!
     
-    var statusBarIsHidden = false
-    let centerPanelExpandedOffset: CGFloat = 160
-    
-    var tap: UITapGestureRecognizer!
-    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initCenter(screen: showViewController)
@@ -105,10 +103,7 @@ extension ContainerViewController: CenterViewControllerDelegate{
             animateStatusBar()
             setupWhiteCoverView()
             currentState = .LeftPanelExpanded
-            
             animateCenterPanelXPosition(targetPosition: centerController.view.frame.width - centerPanelExpandedOffset)
-            
-            
         } else {
             statusBarIsHidden = !statusBarIsHidden
             animateStatusBar()
@@ -126,7 +121,6 @@ extension ContainerViewController: CenterViewControllerDelegate{
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
             self.centerController.view.frame.origin.x = targetPosition
         }, completion: completion)
-        
     }
     
     func setupWhiteCoverView(){
@@ -134,15 +128,10 @@ extension ContainerViewController: CenterViewControllerDelegate{
         whiteCoverView.alpha = 0.0
         whiteCoverView.backgroundColor = UIColor.white
         whiteCoverView.tag = 25
-        
         self.centerController.view.addSubview(whiteCoverView)
-        UIView.animate(withDuration: 0.2) {
-            whiteCoverView.alpha = 0.75
-        }
-        
+        whiteCoverView.fadeTo(alphaValue: 0.75, withDuration: 0.2)
         tap = UITapGestureRecognizer(target: self, action: #selector(animateLeftPanel(shouldExpand:)))
         tap.numberOfTapsRequired = 1
-        
         self.centerController.view.addGestureRecognizer(tap)
     }
     
@@ -158,9 +147,7 @@ extension ContainerViewController: CenterViewControllerDelegate{
             }
         }
     }
-    
-    // show shadow
-    
+
     func shouldShowShadowForCenterViewController(status: Bool){
         if status == true{
             centerController.view.layer.shadowOpacity = 0.6
@@ -182,7 +169,6 @@ private extension UIStoryboard{
     
     class func mainStoryboard() -> UIStoryboard{
         return UIStoryboard(name: "Main", bundle: Bundle.main)
-        
     }
     
     class func leftViewController() -> LeftSidePanelViewController?{
@@ -192,5 +178,4 @@ private extension UIStoryboard{
     class func homeViewController() -> HomeViewController{
         return (mainStoryboard().instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController)!
     }
-    
 }

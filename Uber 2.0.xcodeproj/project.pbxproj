@@ -21,6 +21,7 @@
 		FA7BECC51F80278300AD6DD4 /* LeftSidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC41F80278300AD6DD4 /* LeftSidePanelViewController.swift */; };
 		FA7BECC71F8036C100AD6DD4 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC61F8036C100AD6DD4 /* ContainerViewController.swift */; };
 		FA7BECCA1F803AA700AD6DD4 /* CenterViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECC91F803AA700AD6DD4 /* CenterViewControllerDelegate.swift */; };
+		FA7BECCD1F806E7700AD6DD4 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FA7BECC41F80278300AD6DD4 /* LeftSidePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelViewController.swift; sourceTree = "<group>"; };
 		FA7BECC61F8036C100AD6DD4 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		FA7BECC91F803AA700AD6DD4 /* CenterViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewControllerDelegate.swift; sourceTree = "<group>"; };
+		FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		FA7BECA41F7F34E000AD6DD4 /* Uber 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				FA7BECCB1F806E6800AD6DD4 /* Extensions */,
 				FA7BECC81F803A9100AD6DD4 /* Protocols */,
 				FA7BECB91F7FFBA200AD6DD4 /* Model */,
 				FA7BECB81F7FFB9E00AD6DD4 /* View */,
@@ -142,6 +145,14 @@
 				FA7BECC91F803AA700AD6DD4 /* CenterViewControllerDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA7BECCB1F806E6800AD6DD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BECCC1F806E7700AD6DD4 /* UIViewExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 				FA7BECA81F7F34E000AD6DD4 /* HomeViewController.swift in Sources */,
 				FA7BECBD1F8001F800AD6DD4 /* RoundImageView.swift in Sources */,
 				FA7BECCA1F803AA700AD6DD4 /* CenterViewControllerDelegate.swift in Sources */,
+				FA7BECCD1F806E7700AD6DD4 /* UIViewExt.swift in Sources */,
 				FA7BECC51F80278300AD6DD4 /* LeftSidePanelViewController.swift in Sources */,
 				FA7BECBF1F80038600AD6DD4 /* RoundedShadowView.swift in Sources */,
 				FA7BECA61F7F34E000AD6DD4 /* AppDelegate.swift in Sources */,
