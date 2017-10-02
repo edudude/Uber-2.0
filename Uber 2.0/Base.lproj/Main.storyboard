@@ -397,7 +397,7 @@
                                                 <constraint firstAttribute="height" constant="381" id="hdY-MJ-pPQ"/>
                                             </constraints>
                                         </stackView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEL-JU-fc0">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEL-JU-fc0" customClass="RoundedShadowButtonView" customModule="Uber_2_0" customModuleProvider="target">
                                             <rect key="frame" x="8" y="660" width="398" height="60"/>
                                             <color key="backgroundColor" red="0.99551767840000005" green="1" blue="0.993310629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -407,6 +407,9 @@
                                             <state key="normal" title="SIGN UP / LOGIN">
                                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="authUser:" destination="NIh-AG-GUL" eventType="touchUpInside" id="9wg-lL-B68"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -436,6 +439,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6OT-0z-ia0"/>
                     </view>
+                    <connections>
+                        <outlet property="authButton" destination="bEL-JU-fc0" id="ZBB-7f-hQb"/>
+                        <outlet property="emailTextField" destination="4eU-3F-BEY" id="wJ8-Ic-nTf"/>
+                        <outlet property="passwordTextField" destination="abZ-Ob-6gz" id="v0n-lM-1Pn"/>
+                        <outlet property="segmentedControl" destination="9FV-Df-uaR" id="jhY-g5-BRj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lp-Hl-mAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
