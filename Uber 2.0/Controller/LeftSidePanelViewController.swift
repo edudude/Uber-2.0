@@ -10,8 +10,20 @@ import UIKit
 
 class LeftSidePanelViewController: UIViewController {
     
+    @IBOutlet weak var pickUpModeLabel: UILabel!
+    @IBOutlet weak var pickUpModeSwitch: UISwitch!
+    @IBOutlet weak var authenticateButton: UIButton!
+    @IBOutlet weak var userImageView: RoundImageView!
+    @IBOutlet weak var userAccountTypeLabel: UILabel!
+    @IBOutlet weak var userEmailLabel: UILabel!
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
     }
 
     @IBAction func signUpLogin(_ sender: Any) {

@@ -282,19 +282,66 @@
                                     <action selector="signUpLogin:" destination="T7n-5c-2XF" eventType="touchUpInside" id="ZDy-oR-1IY"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XQ3-VH-bok">
+                                <rect key="frame" x="20" y="460" width="200" height="200"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kun-wx-YhJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICKUP MODE ENABLED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaB-WQ-9hd">
+                                        <rect key="frame" x="0.0" y="45.333333333333314" width="160.66666666666666" height="20.000000000000057"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="h73-uk-aRR" customClass="RoundImageView" customModule="Uber_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Bx6-oa-M1O"/>
+                                            <constraint firstAttribute="height" constant="50" id="m1h-pq-fsn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@google.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PI-mV-q7g">
+                                        <rect key="frame" x="0.0" y="144.33333333333337" width="120" height="21.333333333333258"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osj-Ie-ifR">
+                                        <rect key="frame" x="0.0" y="180" width="103.66666666666667" height="20"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="at5-OP-mij"/>
+                                    <constraint firstAttribute="width" constant="200" id="mpy-FZ-lKY"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qSI-hH-Ldj" firstAttribute="bottom" secondItem="aLY-jy-GVQ" secondAttribute="bottom" constant="20" id="47b-h7-e1a"/>
                             <constraint firstItem="JZ6-n2-V8v" firstAttribute="leading" secondItem="qSI-hH-Ldj" secondAttribute="leading" constant="20" id="4Lv-fM-HRS"/>
+                            <constraint firstItem="XQ3-VH-bok" firstAttribute="leading" secondItem="qSI-hH-Ldj" secondAttribute="leading" constant="20" id="8km-Yk-a40"/>
                             <constraint firstItem="En7-S3-fJH" firstAttribute="trailing" secondItem="qSI-hH-Ldj" secondAttribute="trailing" id="Rlh-gL-fF6"/>
                             <constraint firstItem="aLY-jy-GVQ" firstAttribute="leading" secondItem="qSI-hH-Ldj" secondAttribute="leading" constant="20" id="YsJ-c4-ePw"/>
                             <constraint firstItem="JZ6-n2-V8v" firstAttribute="top" secondItem="En7-S3-fJH" secondAttribute="bottom" constant="8" id="d6C-pP-RDR"/>
+                            <constraint firstItem="aLY-jy-GVQ" firstAttribute="top" secondItem="XQ3-VH-bok" secondAttribute="bottom" constant="8" id="lBF-Kw-q5e"/>
                             <constraint firstItem="En7-S3-fJH" firstAttribute="leading" secondItem="qSI-hH-Ldj" secondAttribute="leading" id="tX7-GN-MaZ"/>
                             <constraint firstItem="En7-S3-fJH" firstAttribute="top" secondItem="neh-2v-GhQ" secondAttribute="top" id="x4H-qd-3tg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qSI-hH-Ldj"/>
                     </view>
+                    <connections>
+                        <outlet property="authenticateButton" destination="aLY-jy-GVQ" id="gza-PH-mKQ"/>
+                        <outlet property="pickUpModeLabel" destination="TaB-WQ-9hd" id="LtF-ek-7JG"/>
+                        <outlet property="pickUpModeSwitch" destination="kun-wx-YhJ" id="ZXW-SC-C9l"/>
+                        <outlet property="userAccountTypeLabel" destination="Osj-Ie-ifR" id="Y4L-AU-ucB"/>
+                        <outlet property="userEmailLabel" destination="7PI-mV-q7g" id="aiV-XO-yxs"/>
+                        <outlet property="userImageView" destination="h73-uk-aRR" id="ID2-db-r0k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7u-1R-gR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
