@@ -28,7 +28,6 @@ class LeftSidePanelViewController: UIViewController {
         pickUpModeSwitch.isOn = false
         pickUpModeSwitch.isHidden = false
         pickUpModeLabel.isHidden = true
-        
     }
     
     func observePassengersAndDrivers(){
