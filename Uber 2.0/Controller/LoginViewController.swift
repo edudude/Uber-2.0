@@ -13,14 +13,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - IBOutlets
     @IBOutlet weak var emailTextField: RoundedCornerTextField!
-    
     @IBOutlet weak var passwordTextField: RoundedCornerTextField!
-    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-    
     @IBOutlet weak var authButton: RoundedShadowButtonView!
-    
- 
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
