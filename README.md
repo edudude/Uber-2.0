@@ -22,4 +22,4 @@ DESCRIPTION:
 Build a full-stack Uber clone - Both driver and user, custom UI, maps, GPS,
 Beginner to advanced Firebase - real time location tracking and data storage of GPS coordinates,
 Master Apple MapKit - custom annotations, search, real time location tracking and more,
-Advanced iOS development techniques - custom animation, code management, UI design, back-end data management,
+Advanced iOS development techniques - custom animation, code management, UI design, back-end data management.
